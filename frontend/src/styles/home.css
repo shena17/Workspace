@@ -1,0 +1,63 @@
+p {
+  font-family: var(--font-family-titles);
+}
+
+.homeTitle {
+  text-align: left;
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.homeSubTitle {
+  margin-left: 10px;
+  color: gray;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.homeTopic {
+  margin: 0px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.02857em;
+  color: rgb(103, 116, 142);
+}
+
+.homeCountTop {
+  margin: 0px;
+  font-size: 2rem;
+  line-height: 1.375;
+  text-align: left;
+  color: var(--blue);
+  margin-top: 10px;
+}
+
+.homeCountTop2 {
+  margin: 0px;
+  font-size: 1.6rem;
+  text-align: left;
+  line-height: 1.375;
+  color: var(--blue);
+  font-weight: 300;
+}
+
+.homeIcons {
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.countDesc {
+  color: #28b06a;
+  /* color: #ff2626; */
+  margin-left: 0px;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 500;
+}

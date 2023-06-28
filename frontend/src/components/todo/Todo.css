@@ -1,0 +1,164 @@
+:root {
+  --color-primary: #014486;
+  --color-success: #e6aa07;
+  --color-danger: rgb(196, 4, 4);
+}
+
+.todo-item {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.todo-item:before {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-primary);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.title {
+  margin-top: 10px;
+  color: var(--color-primary);
+}
+
+.description {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: white;
+}
+
+.complete-button {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.complete-button:hover {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: white;
+}
+
+.completed-button {
+  background-color: transparent;
+  border: 1px solid var(--color-success);
+  border-radius: 10px;
+  color: var(--color-success);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  text-decoration: line-through;
+}
+.completed-button:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-success);
+  border-radius: 10px;
+  color: var(--color-success);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  text-decoration: line-through;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: 1px solid var(--color-danger);
+  border-radius: 10px;
+  color: var(--color-danger);
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  color: white;
+}
+
+.created-at {
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: var(--color-primary);
+}
+
+.content {
+  padding-right: 100px;
+}
+
+.todo-item.completed:before {
+  background-color: var(--color-success);
+}
+
+.todo-item.completed .title {
+  color: var(--color-success);
+}
+
+@media only screen and (max-width: 900px) {
+  .todo-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons button {
+    margin-top: 15px;
+  }
+  .created-at {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 0;
+    left: 20px;
+    color: var(--color-primary);
+  }
+}

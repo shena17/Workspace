@@ -1,0 +1,43 @@
+.searchbar {
+  border: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  letter-spacing: 0.05rem;
+  color: rgb(61, 61, 61);
+  font-family: var(--font-family-titles);
+  width: 85%;
+}
+
+.searchbar:focus {
+  outline: none;
+}
+
+.searchTopic {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.listItem {
+  padding: 10px 30px;
+}
+
+.listText {
+  font-size: 1rem;
+  color: #3c3c3c;
+  margin-left: 10px;
+}
+
+.listSubText {
+  margin-left: 10px;
+}
+
+.searchDiv {
+  display: flex;
+  font-size: 0.9rem;
+  background-color: #d6edff;
+  padding: 5px 20px;
+  border-radius: 10px;
+}

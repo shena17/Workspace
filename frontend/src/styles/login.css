@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --blue: #28395a;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #fb246a;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --light-blue: #014b85;
+  --light-blueDash: #0f446c;
+  --dark-blue: #33375f;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --gray-200: #e2e8f097;
+  --dashboard-bg: #f3f3f3;
+  --tb-hover: #e2e8f097;
+  /* --drawer-bg1: #b0b0b05c; */
+  --drawer-bg: #dcdcdc;
+  --menu-bg: #e6e6e6;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --font-family-para: "Comic Neue", Helvetica, Arial, sans-serif;
+  --font-family-solid: "Be Vietnam Pro", sans-serif;
+  --font-family-titles: "Roboto", sans-serif;
+}
+
+.login-main {
+  background-color: rgb(251, 251, 251);
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
+  height: 100vh;
+}
+
+.logo-login {
+  width: 300px;
+  position: relative;
+}
+
+.login-container {
+  text-align: center;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.intro {
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex: 1;
+}
+
+.right {
+  align-items: center;
+  height: 100%;
+}
+
+.left {
+  text-align: left;
+  flex-direction: column;
+  padding-top: 30vh;
+}
+
+.login-form {
+  text-align: left;
+  background-color: var(--white);
+  box-shadow: 0 3px 20px hsl(0deg 0% 40% / 15%);
+  border-radius: 10px;
+  margin: 0 auto 0px;
+  padding: 35px 35px;
+  font-family: var(--font-family-solid);
+  width: 100%;
+}
+
+.login-lead {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #718093;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.signin-btn {
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 9px;
+  font-family: var(--font-family-solid);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+  margin-top: 40px;
+  background-color: var(--pink);
+}
+
+.signin-btn::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--pink);
+  z-index: -1;
+  border-radius: 5px;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in-out;
+}
+
+.signin-btn:hover::after {
+  color: var(--pink);
+  transform: scaleX(1);
+}
+
+.signin-btn:hover {
+  color: var(--pink);
+  transition: all 550ms ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.browse-btn {
+  align-items: center;
+  background-color: var(--pink);
+  position: relative;
+  transition: all 550ms ease-in-out;
+  z-index: 1;
+}
+
+.forgot-pwd-div {
+  text-align: right;
+}
+
+.signup-div {
+  text-align: center;
+}
+
+.signup-div a {
+  text-decoration: none;
+  color: var(--pink);
+}
+
+.invalid-feedback {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.forgot-pwd-div a:hover,
+.signup-div a:hover {
+  transition: all 250ms ease-in-out;
+  color: blue;
+  text-decoration-line: underline;
+}
+
+@media all and (min-width: 1201px) {
+}
+
+@media all and (max-width: 1200px) {
+}
+
+@media all and (max-width: 950px) {
+  .register::after {
+    background-color: var(--pink);
+  }
+
+  .register:hover::after {
+    color: var(--pink);
+  }
+
+  .register:hover {
+    color: var(--white);
+  }
+
+  .browse-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .browse-btn {
+    display: block;
+    padding: 2% 6%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .login-container {
+    display: block;
+    margin-top: 0;
+  }
+
+  .left {
+    justify-content: center;
+    padding-top: 0;
+    flex-direction: row;
+  }
+
+  .right {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .logo-login {
+    width: 185px;
+    position: relative;
+    top: 0vh;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .register-container {
+    width: auto;
+  }
+
+  .country-input {
+    display: block;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .login-container {
+    width: auto;
+  }
+}
+
+.loginInputLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #718093;
+  margin-bottom: 6px;
+  margin-left: 5px;
+}

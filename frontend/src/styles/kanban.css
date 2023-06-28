@@ -1,0 +1,65 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.react-kanban-column {
+  border-radius: 5px;
+  padding-inline: 5px;
+  font-size: 1rem;
+  color: var(--blue);
+  font-family: var(--font-family-titles);
+  color: var(--light-blue);
+}
+
+.react-kanban-card {
+  border-radius: 5px;
+  font-size: 0.85rem;
+  height: 130px;
+  color: gray;
+  text-align: left;
+  display: -webkit-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px lightgray;
+  padding-inline: 15px;
+}
+
+.react-kanban-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f7b26d;
+  width: 3px;
+}
+
+.react-kanban-card::-webkit-scrollbar {
+  width: 3px;
+}
+
+.react-kanban-card__title {
+  color: black;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.react-kanban-card--dragging {
+  box-shadow: 0px 0px 10px gray;
+  transform: scale(1.1);
+  transform: rotate(-2deg);
+  transition: transform 150ms ease-in-out;
+  rotate: -1;
+}
+
+.kanban {
+  top: 0;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

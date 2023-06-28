@@ -1,0 +1,138 @@
+/* Define color variables */
+:root {
+  --transparent-color: #0066cc00;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --background-input-color: #dad7d7;
+  --button-hover-colour: #014486;
+  --button-text-colour: #014486;
+}
+/* TodoPanel inputs container */
+.todo-inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* TodoPanel container */
+.todo-panel {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+}
+
+/* TodoPanel inputs */
+.todo-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.todo-inputs input[type="text"] {
+  flex: 4;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--background-input-color);
+  color: var(--text-color);
+  margin-right: 10px;
+  width: 100%;
+}
+
+.todo-inputs input[type="text"]:focus {
+  border: 1px solid var(--button-hover-colour);
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.todo-inputs button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px !important;
+  border: 1px solid var(--button-text-colour) !important;
+  background-color: var(--transparent-color) !important;
+  color: var(--button-text-colour) !important;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.todo-inputs button:hover {
+  background-color: var(--button-hover-colour) !important;
+  color: var(--background-color) !important;
+}
+/* TodoPanel list */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Todo component */
+.todo {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-input-color);
+}
+
+.todo h2 {
+  margin: 0;
+  padding: 10px;
+  background-color: var(--transparent-color);
+  color: var(--background-input-color);
+  border-radius: 5px 5px 0 0;
+}
+
+.todo p {
+  margin: 0;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+.todo button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--transparent-color);
+  color: var(--background-input-color);
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  .todo-inputs {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .todo-inputs button {
+    width: 100% !important;
+    font-size: 0.8rem;
+  }
+
+  .todo-inputs input[type="text"],
+  .todo-inputs button {
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+
+  .todo-list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .todo {
+    width: 100%;
+  }
+}

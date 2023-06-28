@@ -1,0 +1,151 @@
+:root {
+  --dashboard: #fcfaf4;
+}
+
+.tbHeading {
+  color: var(--light-blue);
+  font-family: var(--font-family-titles);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.statusBadge {
+  width: 100px;
+  padding: 3.5px 0px;
+  font-family: var(--font-family-solid);
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 400;
+  color: white;
+}
+
+.pageTitle {
+  margin-left: 20px;
+  color: var(--blue);
+  font-family: var(--font-family-titles);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 3px;
+}
+.popupTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: var(--font-family-titles);
+  color: var(--light-blue);
+}
+
+.backBtn {
+  background-color: blue;
+  padding: 0;
+}
+
+.formMainContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.topFormCon {
+  display: flex;
+}
+
+.middleFormCon {
+  display: flex;
+}
+
+.midmiddle {
+  flex: 1;
+}
+
+.midright,
+.midleft {
+  flex: 1;
+}
+
+.addProjectButtons {
+  padding: 15px 0px;
+  justify-content: end;
+  width: 100%;
+}
+
+.drawerItems {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.drawerBtns {
+  width: 100%;
+  color: rgb(105, 105, 105);
+  font-weight: 400;
+  font-family: var(--font-family-titles);
+  font-size: 0.9rem;
+  padding: 0px 0px;
+  border-radius: 15px;
+  margin: 2px 0px;
+  transition: all 100ms ease-in-out;
+}
+
+.drawerBtns:hover:not(.selectOn) {
+  background-color: #014c85a9;
+  color: white;
+  width: 98%;
+}
+
+.drawerIcons {
+  margin: 0;
+  margin-right: 25px;
+}
+
+.selectOn {
+  background-color: #fb246cba;
+  color: white;
+  border-radius: 15px 0px 0px 15px;
+  transition: all 250ms ease-in-out;
+}
+
+.selectOn:hover {
+  color: white;
+}
+
+.popup {
+  background-color: var(--dashboard-bg);
+}
+
+.tableCommon {
+  margin: 1px;
+}
+
+.tableData {
+  margin-bottom: 3px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+}
+
+.tableSubData {
+  color: rgb(148, 148, 148);
+  font-size: 0.8rem;
+  font-family: var(--font-family-solid);
+  font-weight: 500;
+}
+
+.noProjIcon {
+  height: 200px;
+  margin-top: 5%;
+}
+
+.noProjMain {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-family: var(--font-family-titles);
+  color: gray;
+}
+
+.noProjSec {
+  margin-top: 5px;
+  font: 1rem;
+  font-family: var(--font-family-solid);
+  color: gray;
+  margin-bottom: 20px;
+}

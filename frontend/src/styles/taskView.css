@@ -1,0 +1,17 @@
+.dateDiffBackground {
+  max-width: fit-content;
+  padding: 4px;
+  font-family: var(--font-family-solid);
+  font-size: 0.8rem;
+  background-color: #ccccff;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 400;
+  color: #000099;
+  align-items: center;
+}
+
+.DateDiffDetails {
+  margin-left: 10px;
+  font-weight: 500;
+}

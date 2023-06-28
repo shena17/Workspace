@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 0.8rem;
+}
+h6{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+h4{
+    margin-bottom: 0;
+    color: var(--pink);
+}
+.teamCardBottom{
+    margin-right: 1.2rem;
+}
+
+.teamCardBottomMoreVertIcon{
+    margin-left: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.teamCardContainer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(270px, 1fr));
+}

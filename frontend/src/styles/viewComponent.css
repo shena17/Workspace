@@ -1,0 +1,195 @@
+p {
+  margin: 0;
+  font-family: var(--font-family-titles);
+}
+
+.projectTitle {
+  color: var(--blue);
+  font-family: var(--font-family-titles);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.topicTop {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: var(--font-family-titles);
+}
+
+.topDetails {
+  font-size: 0.75rem;
+  color: #949494;
+  margin: 0;
+  margin-right: 35px;
+  font-weight: 500;
+}
+
+.cardTopics {
+  color: var(--blue);
+  font-family: var(--font-family-titles);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cardSubTopic {
+  text-align: center;
+  font-weight: 500;
+  color: var(--light-blue);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.cardSubData {
+  color: #67687c;
+  font-family: var(--font-family-titles);
+  font-weight: 500;
+  text-align: left;
+}
+
+.perfCard {
+  font-size: 0.7rem;
+  font-family: var(--font-family-titles);
+  color: #949494;
+  font-weight: 500;
+}
+
+.countView {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--blue);
+}
+
+.count2 {
+  font-weight: 500;
+  font-size: clamp(0.8rem, 1rem, 1.5rem);
+  color: var(--blue);
+}
+
+.projectCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCount {
+  text-align: end;
+  font-size: 2rem;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.perfCard2 {
+  font-size: clamp(0.4rem, 0.6rem, 0.7rem);
+  font-family: var(--font-family-titles);
+  color: #949494;
+  font-weight: 500;
+}
+
+.dateCard {
+  padding: 10px 0px;
+  background-color: #e7e5fd;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(209, 209, 209, 0.359);
+}
+
+.timeline {
+  background-color: #e7e5fd;
+  padding: 10px 0px;
+  border-radius: 10px;
+  justify-content: center;
+  color: #00009c;
+  font-size: 1rem;
+}
+
+.timelineText {
+  font-size: 0.9rem;
+  margin-top: 2px;
+  font-weight: 500;
+  text-align: left;
+  font-family: var(--font-family-titles);
+}
+
+.projDesc {
+  font-size: 0.9rem;
+  margin-left: 33px;
+  margin-top: 5px;
+  display: -webkit-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.taskDesc {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: -webkit-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px inherit;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(163, 163, 163);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+}
+
+.radioTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+}
+
+.radioBody {
+  color: rgb(139, 139, 139);
+}
+
+.teamView {
+  overflow-y: auto;
+}
+
+.projectTopics {
+  font-size: 1.2rem;
+  text-align: left;
+  font-family: var(--font-family-titles);
+  margin-left: 10px;
+}
+
+/* HASHAN */
+
+.teamsSubData {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--light-blue);
+}
+
+.teamCardBottomMoreVertIcon {
+  width: 100%;
+}
